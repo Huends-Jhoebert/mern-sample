@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaUser, FaSignInAlt } from "react-icons/fa";
+import Button from "react-bootstrap/Button";
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -56,9 +57,17 @@ function Login() {
           </div>
 
           <div className="form-group">
-            <button type="submit" className="btn btn-block">
+            <div className="d-grid gap-2">
+              <Button variant="dark" size="lg">
+                Submit
+              </Button>
+            </div>
+            {/* <Button type="submit" variant="dark">
               Submit
-            </button>
+            </Button> */}
+            {/* <button type="submit" className="btn btn-block">
+              Submit
+            </button> */}
           </div>
         </form>
       </section>

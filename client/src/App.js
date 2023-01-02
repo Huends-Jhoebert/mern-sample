@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ShowToast from "./components/Toast";
+import { register, reset } from "./features/auth/authSlice";
 
 import Header from "./components/Header";
 import Dashboard from "./pages/Dashboard";
@@ -18,6 +20,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      <ShowToast />
     </>
   );
 }
